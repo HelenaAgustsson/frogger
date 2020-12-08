@@ -1,0 +1,471 @@
+/*************************/
+/* 	    Fargepalett      */
+/*************************/
+/*
+blå: #056CF2
+gul: #FAF430
+grønn: #00F56A
+lilla: #F500C2
+rød: #F50F00 
+*/
+
+
+/*************************/
+/* 	       Modal         */
+/*************************/
+
+.modal-title {
+	color: #F50F00;
+}
+
+.modal-body {
+	text-align:center;
+}
+
+
+/*************************/
+/* 	   Navigasjonsbar    */
+/*************************/
+
+#navbar-resp {
+	padding: 0px;
+	
+}
+
+/* Legg til blank bakgrunnsfarge på navigasjonsbar */
+.navbar {
+	background-color: #333;
+	overflow: hidden;
+	/* padding: 0; */
+}
+
+/* Stilsett lenkene i navigasjonsbaren */
+.nav-item {
+	text-decoration: none;
+	padding: 10px 5px;
+}
+
+.nav-link {
+	color: white;
+}
+
+
+/* Endre fargen på lenkene ved "hover" */
+.nav-item:hover {
+	background-color:#056CF2;
+	color: #ffffff;
+}
+
+.nav-link:hover {
+	color: white;
+}
+
+/* Fremhev den aktive siden */
+.nav-item.active {
+	background-color: #F500C2;
+}
+
+
+/*************************/
+/* 	      Footer         */
+/*************************/
+
+.page-container {
+	position: relative;
+	min-height: 100vh;
+}
+
+.footer {
+	background-color: #333;
+	color: #ffffff;
+	text-align: left;
+	padding: 20px 30px;
+	font-size: 0.8em;
+	margin-top: 50px;
+}
+
+.footer-li {
+	list-style: none;
+	padding-left:0;
+	display: block;
+}
+
+.footer-link {
+	color: #ffffff;
+	margin-left: 5px;
+}
+
+.footer-links {
+	padding-left: 0px;
+}
+
+.footer-link:hover {
+	color: #ffffff;
+	cursor: pointer;
+}
+
+
+/*************************/
+/*	Oppsett med Flexbox  */
+/*************************/
+
+/* Container for flexboxer */
+.content {
+	display: -webkit-flex;
+	display: flex;
+}
+
+/* Lag tre ulike kolonner ved siden av hverandre */
+.column {
+	padding: 10px;
+}
+
+/* Venstre og høyre kolonne */
+.column.side {
+	-webkit-flex: 1;
+	-ms-flex: 1;
+	flex: 1;
+	padding: 0em 3em;
+}
+
+/* Midtre kolonne */
+.column.middle {
+	-webkit-flex: 2;
+	-ms-flex: 2;
+	flex: 2;
+}
+
+
+/*************************/
+/* 	  	  Innhold	     */
+/*************************/
+
+/* Funky overskrift på splash screen */
+#header {
+    font-family: 'Luckiest Guy', cursive;
+    font-size: 7em;
+	text-align: center;
+	color: #F500C2;
+	padding-bottom: 20px;
+}
+
+/* Vanlig overskrift */
+.page-header {
+	color: #F500C2;
+	margin: 30px auto;
+}
+
+/* Midtstilte elementer */
+.center {
+	padding: 10px;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/* Øvrig tekst */
+body {
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	text-align: center;
+	color: #04276e;
+	font-size: 1.2em;
+}
+
+/* Usynlige kulepunkter */
+.nobullet{
+	list-style-type: none;
+}
+
+/* Hovedbilde med frosk */
+.splashpicture {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+	width: 100%;
+	height: 25em;
+	object-fit: scale-down;
+}
+
+/* Vanlige musikknoter */
+.note {
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+	width: 50%;
+	max-width: 80px;
+	padding: 2em 0em;
+}
+
+/* Juster høyre og venstre musikknoter */
+.outernoteleft {
+	margin-right: 0;
+}
+
+.outernoteright {
+	margin-left: 0;
+}
+
+/* Flippede musikknoter */
+.note {
+	transition: transform 0.8s;
+	transform-style: preserve-3d;
+}
+
+.flippednote {
+	transform: rotateY(180deg);
+}
+
+/* Knapp for å starte spill */
+.button {
+	background-color: #056CF2;
+	border-radius: 6px;
+	border: 3px solid #056CF2;
+	color: white;
+	padding: 12px 128px;
+	text-align: center;
+	font-size: 32px;
+	font-weight: bold;
+	margin: 4px 2px;
+	cursor: pointer;
+	max-height: 3em;
+}
+
+/* Fargebytteeffekt når musepekeren holdes over knappen */
+.button:hover {
+	background-color: #F500C2;
+	border-color:  #F500C2;
+}
+
+/* Usynlige knapper til splash screen (overlay til bildet) */
+.invisbutton {
+	background-color: transparent;
+	position: relative;
+	width: 100%;
+	height: 100%;
+	transform: translate(0%, -100%);
+	border: none;
+	cursor: pointer;
+}
+
+#freezebutton {
+	display: block;
+}
+
+#unfreezebutton {
+	display: none;
+}
+
+
+/*************************/
+/* 		   Spill		 */
+/*************************/
+
+.section {
+    width: 80%;
+    margin: auto;
+}
+
+.game-section {
+	max-width: 900px;
+	margin: auto;
+}
+
+/* Spillvindu */
+canvas {
+    border: 2px solid #056CF2;
+	width: 100%;
+	max-width: 1000px;
+	/*max-height: 500px;*/
+	display: block;
+	margin: auto;
+}
+
+/* Spillknapper */
+.game-buttons {
+	margin: 30px auto;
+}
+
+.game-button {
+	padding: 5px 10px;
+	border: solid 2px #056CF2;
+	background-color: #056CF2;
+	color: white;
+	border-radius: 2px;
+	cursor: pointer;
+}
+
+.inactive {
+	background-color: grey;
+	border-color: grey;
+}
+
+.game-button:hover {
+	background-color: #F500C2;
+	border-color: #F500C2;
+}
+
+/* Lydstyrke */
+.game-volume {
+	margin-top: -15px;
+	padding: 25px 10px;
+	color: #056CF2;
+}
+
+/* Spillressurser. Display hidden då desse er fullstendig gøymd */
+.gameresources {
+	display: none;
+}
+
+/* Statusbar på toppen av spillet */
+.statusbar {
+	color: #056CF2;
+	margin: 20px auto;
+	font-weight: bold;
+	font-size: 18px;
+}
+
+.statusbar-item {
+	border-top: solid #056CF2 2px;
+	border-bottom: solid #056CF2 2px;
+	padding: 10px;
+	text-align: center;
+	margin: 0px 0px;
+}
+
+#score {
+	border-bottom-left-radius: 5px;
+	border-top-left-radius: 5px;
+	border-left: solid #056CF2 2px;
+}
+
+#highscore {
+	border-right: solid 2px #056CF2;
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+}
+
+.life {
+	margin: 0px 5px;
+	color: #F50F00;
+}
+
+
+/*************************/
+/* 	     High Score      */
+/*************************/
+
+/* Tabell med high scores */
+#scoretable {
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	border-collapse: collapse;
+	width: 70%;
+}
+
+#scoretable td, #scoretable th {
+	border: 1px solid #ddd;
+	padding: 8px;
+}
+
+/* Effekt ved hover */
+#scoretable tr:nth-child(even){background-color: #f2f2f2;}
+
+#scoretable tr:hover {background-color: #ddd;}
+
+/* Overskriftsraden i tabellen */
+#scoretable th {
+	padding-top: 10px;
+	padding-bottom: 10px;
+	text-align: center;
+	background-color: #056CF2;
+	color: white;
+	font-size: 20px;
+}
+
+/* Tabellen er sterkt inspirert fra w3schools, og mye av koden er lånt
+fra https://www.w3schools.com/css/css_table.asp */
+
+
+/*************************/
+/* 	   Instruksjoner     */
+/*************************/
+
+.game-rules, .backstory {
+	padding: 20px;
+	border: 2px dashed #056CF2;
+}
+
+.container.game-rules {
+	padding: 30px;
+}
+
+ul.game-rules.row {
+	padding-left: 20px;
+}
+
+.game-rules > .row > .col > h3 {
+	color: #056CF2;
+}
+
+
+/*************************/
+/* 	    Kontaktsiden     */
+/*************************/
+
+.card.profile-card {
+	border: 2px solid #056CF2;
+	padding: 10px;
+	border-radius: 5px;
+	margin-bottom: 20px;
+}
+
+.card-body {
+	padding: 0.5rem !important;
+}
+
+.name {
+	font-size: 20px;
+	font-weight: 500;
+}
+
+.role {
+	font-size: 18px;
+	font-weight: 400;
+}
+
+.description {
+	padding-top: 12px;
+	font-size: 16px;
+	font-weight: normal;
+}
+
+
+/*************************/
+/* 	  Skjermtilpasning   */
+/*************************/
+
+@media screen and (max-width: 600px) {
+	.statusbar-item, .game-button  {
+		font-size: 0.8rem;
+	}
+	.page-header {
+		font-size: 1.8rem;
+	}
+	#header {
+		font-size: 4rem;
+	}
+	.button {
+		padding: 20px;
+	}
+	.splashpicture {
+		height: 20em;
+	}
+	.column.side {
+		padding: 0;
+	}
+}
+
+/* @media only screen and (max-width: 600px) {
+	 #gamecanvas {position: fixed; border: none;}
+	 .game-button {display: none};
+	 .navbar {display: none};
+} */
