@@ -389,6 +389,12 @@ fra https://www.w3schools.com/css/css_table.asp */
 /* 	   Instruksjoner     */
 /*************************/
 
+.frog-icon {
+	height: 50px;
+	margin: 10px auto;
+
+}
+
 .game-rules, .backstory {
 	padding: 20px;
 	border: 2px dashed #056CF2;
