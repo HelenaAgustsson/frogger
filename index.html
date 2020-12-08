@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <title>Hjem |  Funky Frogger</title>
+    <link rel="icon" href="graphics/frog2.svg">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="funkyfrogger.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/8e6bcea510.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div class="page-container">
+
+<!-- Navigasjonsbar -->
+<nav class="navbar navbar-expand-md navbar-custom" id="navbar-resp">
+    <!-- Toggler/collapsibe button -->
+    <button class="navbar-dark navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <span class="custom-toggler navbar-toggler-icon"></span>
+    </button> 
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <ul class="navbar-nav">
+            <li class="nav-item active"><a class="nav-link" href="index.html">Hjem</a></li>
+            <li class="nav-item"><a class="nav-link " href="spill.html" class="active">Spill</a></li>
+            <li class="nav-item"><a class="nav-link" href="instruksjoner.html">Instruksjoner</a></li>
+            <li class="nav-item"><a class="nav-link" href="backstory.html">Bakgrunnshistorie</a></li>
+            <li class="nav-item"><a class="nav-link" href="highscore.html">High Score</a></li>
+            <li class="nav-item"><a class="nav-link" href="kontakt.html">Kontakt oss</a></li>
+            <li class="nav-item"><a class="nav-link" href="kreditering.html">Kreditering</a></li>   
+        </ul>
+    </div>
+</nav>
+
+<!-- Overskrift -->
+<div id="header">Funky Frogger</div>
+
+<!-- Midtinnhold, bestående av bilder -->
+<div class="content">
+    <div class="column side left">
+        <img class="note outernoteleft" src="images/notes6.svg" alt="Orange and blue music notes">
+        <img class="note" src="images/notes3.svg" alt="Pink and purple music notes">
+        <img class="note outernoteleft" src="images/notes7.svg" alt="Blue music notes">
+    </div>
+    <div class="column middle">
+        <img class="splashpicture" id="splashpicture" src="images/shades_frog.jpg" alt="Frog with funky moves and shades">
+        <button id="freezebutton" class="invisbutton" type="button" ></button>
+        <button id="unfreezebutton" class="invisbutton" type="button" ></button>
+    </div>
+    <div class="column side right">
+        <img class="note outernoteright" src="images/notes4.svg" alt="Orange and gold music notes">
+        <img class="note" src="images/notes5.svg" alt="Cyan and gold music notes">
+        <img class="note outernoteright" src="images/notes8.svg" alt="Blue and yellow music notes">
+    </div>
+</div>
+
+<!-- Knapp for å starte spill -->
+<div class="center">
+    
+        <a href="spill.html">
+            <button class="button">Til Spillet <i class="fas fa-arrow-right"></i></button>
+        </a>
+        
+</div>
+
+
+<!-- Avspillingskontroller for musikk 
+<div class="center">
+    <audio controls autoplay>
+        <source src="audio/protofunk.mp3" type="audio/ogg">
+        Nettleseren din støtter ikke avspilling av lydfilen.
+    </audio>
+</div>
+</div>
+-->
+
+<!-- Footer nederst på siden -->
+<footer class="footer">
+    <div class="row footer-row">
+        <div class="col-12 col-sm-3 col-lg-2">
+            <span class="font-weight-bold">Spillet</span>
+            <ul class="footer-links">
+                <li class="footer-li"><a class="footer-link" href="index.html">Hjem</a></li>
+                <li class="footer-li"><a class="footer-link " href="spill.html" class="active">Spill</a></li>
+                <li class="footer-li"><a class="footer-link" href="instruksjoner.html">Instruksjoner</a></li>
+                <li class="footer-li"><a class="footer-link" href="backstory.html">Bakgrunnshistorie</a></li>
+                <li class="footer-li"><a class="footer-link" href="highscore.html">High Score</a></li>
+            </ul>  
+        </div>
+        <div class="col-12 col-sm-3 col-lg-2">
+            <span class="font-weight-bold">Informasjon</span>
+            <ul class="footer-links">
+                <li class="footer-li"><a class="footer-link" href="kontakt.html">Kontakt oss</a></li>
+                <li class="footer-li"><a class="footer-link" href="kreditering.html">Kreditering</a></li>   
+            </ul>
+        </div>
+    </div>     
+</footer>
+
+</body>
+<script src="index.js"></script>
+</html>

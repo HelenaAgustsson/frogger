@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <title>Instruksjoner | Funky Frogger</title>
+    <link rel="icon" href="graphics/frog2.svg">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="funkyfrogger.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+<body>
+<div class="page-container">
+
+<!-- Navigasjonsbar -->
+<nav class="navbar navbar-expand-md navbar-custom" id="navbar-resp">
+    <!-- Toggler/collapsibe button -->
+    <button class="navbar-dark navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <span class="custom-toggler navbar-toggler-icon"></span>
+    </button> 
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <ul class="navbar-nav">
+            <li class="nav-item"><a class="nav-link" href="index.html">Hjem</a></li>
+            <li class="nav-item"><a class="nav-link " href="spill.html" class="active">Spill</a></li>
+            <li class="nav-item active"><a class="nav-link" href="instruksjoner.html">Instruksjoner</a></li>
+            <li class="nav-item"><a class="nav-link" href="backstory.html">Bakgrunnshistorie</a></li>
+            <li class="nav-item"><a class="nav-link" href="highscore.html">High Score</a></li>
+            <li class="nav-item"><a class="nav-link" href="kontakt.html">Kontakt oss</a></li>
+            <li class="nav-item"><a class="nav-link" href="kreditering.html">Kreditering</a></li>   
+        </ul>
+    </div>
+</nav>
+
+<!-- Overskrift -->
+<header class="container text-center">
+    <h1 class="page-header  font-weight-bold">Instruksjoner</h1>
+</header>
+
+<!-- Hovedinnhold -->
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <p>
+                Funky Frogger er inspirert av det klassiske spillet "Frogger", men vår versjon er et spill av typen "endless runner". Vår helt Funky F. er litt av en type, og du kan lese mer om hans bakgrunn <a href="./backstory.html">her!</a> 
+                Spillet handler i korte trekk om å holde seg i live og samtidig samle flest mulig poeng!<br><br>
+                <!-- Funky Frogger er politisk korrekt, og ønsker ikke å diskriminere på alder. Derfor har vi sagt at spillet er for alle som fremdeles har gløden til et lite barn i seg, og som klarer å bruke en maskin uten å tygge på den. I tillegg er det en forutsetning å ha synet i behold, og beherske grunnleggende fingermotorikk. Som en bonus vil spillet kanskje vekke en viss nostalgi hos Sega-veteraner. -->
+            </p>
+        </div>
+    </div>
+</div>
+
+<div class="container game-rules">
+        <div class="row">
+            <div class="col">
+                <h3>Kontroller</h3>
+                    <ul>
+                        <li>Start eller pause spillet med ESC eller musepekeren</li>
+                        <li>Bruk enten piltastene eller WASD for å styre frosken rundt på spillebrettet</li>
+                        <ul>
+                            <li>Alternativt trykk SPACEBAR for å hoppe fremover</li>
+                        </ul>
+                        <li>Det er også støtte for å klikke med musen for å styre frosken, og retningen den beveger seg i avhenger av hvilken del av spillvinduet det klikkes på.</li>
+                        <li>Det er også støtte for å bruke touch for å styre frosken, og dette fungerer på samme måte som med museklikk.</li>
+                    </ul>
+                    <br>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col">
+            <h3>Poeng</h3>
+                <div>Samle poeng ved å plukke opp "tonemynter" rundt omkring på spillebrettet. Det finnes i alt tre ulike tonemynter, med hver sin unike poengverdi. I tillegg får frosken ett poeng for hver “rad” i spillebrettet som har blitt nådd.</div>
+                <br>Poengverdier:
+                <ul>
+                    <li>Vanlig musikknote i gull: 10 poeng</li>
+                    <li>Sjelden g-nøkkel i rosa: 30 poeng</li>
+                    <li>Mute-ikon: –30 poeng</li>                
+                    <li>1 poeng per rad oppnådd</li>
+                </ul>
+                <br>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col">
+                <h3>Liv</h3>
+                    <ul>
+                        <li>Frosken starter med 3 liv. Ved tap av alle liv er spillet over</li>
+                        <li>Frosken mister ett liv ved fall i vannet eller ved kontakt med farlige antagonister</li>
+                        <li>Frosken får tilbake et liv når henholdsvis 200, 500 og 1000 poeng er oppnådd</li>               
+                    </ul>
+                <br>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col">
+                <h3>Spillelementer</h3>
+                Alltid trygge områder:
+                <ul>
+                    <li>Pianotangenter</li>
+                    <li>Asfalt/bilvei</li>
+                    <li>Trompeter</li>
+                    <li>Trommer</li>
+                </ul>
+                Midlertidig/delvis trygge områder:
+                <ul>
+                    <li>Cymbaler (forsvinner etter 3 sekunder fra berøring)</li>
+                    <li>Trestammer (forsvinner tilfeldig)</li>
+                    <li>Krokodiller (trygt å stå på ryggen, men kjeften er farlig)</li>
+                </ul>
+                Utrygge områder:
+                <ul>
+                    <li>Vann i elva</li>
+                    <li>Lava</li>
+                </ul>
+                Farlige antagonister:
+                <ul>
+                    <li>Kjøretøy</li>
+                    <li>Krokodillekjefter</li>
+                    <li>Drager</li>
+                 </ul>
+                <br>
+                </div>
+        </div>
+
+        <div class="row">
+            <div class="col">
+                <h3>Vanskelighetsgrad</h3>
+                Spillet har progressiv vanskelighetsgrad med fire nivåer, noe du forhåpentligvis vil merke med økende poengsum! Lykke til! <br><br><br>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col">
+                <h3>Systemkrav</h3>
+                Nettsiden og spillet skal fungere fint i de fleste nyere nettlesere, men fungerer ikke i Internet Explorer. Spillet fungerer også kun delvis på mobiltelefon gitt at denne er i “portrettmodus”.<br><br>
+                Vi har testet følgende nettlesere og kan forsikre at de er kompatible med Funky Frogger:
+                <ul>
+                    <li>Google Chrome – Versjon 86.0.4240.198 (Offisiell delversjon) (64-biters)</li>
+                    <li>Microsoft Edge – Versjon 86.0.622.69 (Offisiell build) (64-biters)</li>
+                    <li>Mozilla Firefox – Versjon 82.0.3 (64-bit)</li>
+                    <li>Opera – Versjon 72.0.3815.320</li>
+                    <li>Safari – Versjon 14.0 (14610.1.28.1.10)</li>
+                    <li>Vivaldi – Versjon 3.4.2066.76</li>
+                </ul>
+            </div>
+        </div>
+</div>
+</div>
+
+<!-- Footer nederst på siden -->
+<footer class="footer">
+    <div class="row footer-row">
+        <div class="col-12 col-sm-3 col-lg-2">
+            <span class="font-weight-bold">Spillet</span>
+            <ul class="footer-links">
+                <li class="footer-li"><a class="footer-link" href="index.html">Hjem</a></li>
+                <li class="footer-li"><a class="footer-link " href="spill.html" class="active">Spill</a></li>
+                <li class="footer-li"><a class="footer-link" href="instruksjoner.html">Instruksjoner</a></li>
+                <li class="footer-li"><a class="footer-link" href="backstory.html">Bakgrunnshistorie</a></li>
+                <li class="footer-li"><a class="footer-link" href="highscore.html">High Score</a></li>
+            </ul>  
+        </div>
+        <div class="col-12 col-sm-3 col-lg-2">
+            <span class="font-weight-bold">Informasjon</span>
+            <ul class="footer-links">
+                <li class="footer-li"><a class="footer-link" href="kontakt.html">Kontakt oss</a></li>
+                <li class="footer-li"><a class="footer-link" href="kreditering.html">Kreditering</a></li>
+            </ul>
+        </div>
+    </div>     
+</footer>
+
+</body>
+</html>

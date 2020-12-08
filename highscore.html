@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <title>Highscore | Funky Frogger</title>
+    <link rel="icon" href="graphics/frog2.svg">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="funkyfrogger.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="highscore.js"></script>
+</head>
+<body>
+<div class="page-container">
+
+<!-- Navigasjonsbar -->
+<nav class="navbar navbar-expand-md navbar-custom" id="navbar-resp">
+    <!-- Toggler/collapsibe button -->
+    <button class="navbar-dark navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <span class="custom-toggler navbar-toggler-icon"></span>
+    </button> 
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <ul class="navbar-nav">
+            <li class="nav-item"><a class="nav-link" href="index.html">Hjem</a></li>
+            <li class="nav-item"><a class="nav-link " href="spill.html" class="active">Spill</a></li>
+            <li class="nav-item"><a class="nav-link" href="instruksjoner.html">Instruksjoner</a></li>
+            <li class="nav-item"><a class="nav-link" href="backstory.html">Bakgrunnshistorie</a></li>
+            <li class="nav-item active"><a class="nav-link" href="highscore.html">High Score</a></li>
+            <li class="nav-item"><a class="nav-link" href="kontakt.html">Kontakt oss</a></li>
+            <li class="nav-item"><a class="nav-link" href="kreditering.html">Kreditering</a></li>   
+        </ul>
+    </div>
+</nav>
+
+<!-- Overskrift -->
+<header class="container text-center">
+    <h1 class="page-header  font-weight-bold">High Score</h1>
+</header>
+
+<!-- Hovedinnhold -->
+<table id="scoretable" class="center">
+    <tr>
+        <th>Rangering</th>
+        <th>Poengsum</th>
+        <th>Navn</th>
+    </tr>
+</table>
+</div>
+
+<!-- Footer nederst på siden -->
+<footer class="footer">
+    <div class="row footer-row">
+        <div class="col-12 col-sm-3 col-lg-2">
+            <span class="font-weight-bold">Spillet</span>
+            <ul class="footer-links">
+                <li class="footer-li"><a class="footer-link" href="index.html">Hjem</a></li>
+                <li class="footer-li"><a class="footer-link " href="spill.html" class="active">Spill</a></li>
+                <li class="footer-li"><a class="footer-link" href="instruksjoner.html">Instruksjoner</a></li>
+                <li class="footer-li"><a class="footer-link" href="backstory.html">Bakgrunnshistorie</a></li>
+                <li class="footer-li"><a class="footer-link" href="highscore.html">High Score</a></li>
+            </ul>  
+        </div>
+        <div class="col-12 col-sm-3 col-lg-2">
+            <span class="font-weight-bold">Informasjon</span>
+            <ul class="footer-links">
+                <li class="footer-li"><a class="footer-link" href="kontakt.html">Kontakt oss</a></li>
+                <li class="footer-li"><a class="footer-link" href="kreditering.html">Kreditering</a></li>   
+            </ul>
+        </div>
+    </div>     
+</footer>
+
+</body>
+</html>
