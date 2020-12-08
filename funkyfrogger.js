@@ -9,12 +9,12 @@ var constants = {
 
 	cars		: [
 		[ "police", 1.8, 1.8 ],
-		[ "bus",	3.3, 3.3 ],
-		[ "car1",	2, 2 ],
-		[ "car2",	2, 2 ],
-		[ "cyber",	1.8, 1.8 ],
+		//[ "bus",	3.3, 3.3 ],
+		//[ "car1",	2, 2 ],
+		//[ "car2",	2, 2 ],
+		//[ "cyber",	1.8, 1.8 ],
 		[ "scooter", 1, 1 ],
-		[ "sportscar", 2, 2 ],
+		//[ "sportscar", 2, 2 ],
 		[ "truck",	2, 2 ],
 	],
 
@@ -675,6 +675,8 @@ function draw_environment(env) {
 		{
 			while (x < game.canvas.width)
 			{
+				//context.fillStyle = 'red';
+				// context.fillRect(x, y, size, size);
 				context.drawImage(env.animation[i], x, y, size, size);
 
 				x += size -1;
@@ -840,11 +842,11 @@ function add_dragons_to_env(env) {
 			speed	: game.difficulty.obstacleSpeed +
 				game.difficulty.obstacleAccel * row,
 
-			image	: document.getElementById("dragongreen")
+			image	: document.getElementById("bird")
 		}
 
 		if(row < 3) {
-			dragon.image = document.getElementById("dragongray");
+			dragon.image = document.getElementById("bird");
 		}
 
 		env.obstacles.push(dragon);
