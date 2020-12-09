@@ -171,10 +171,7 @@ body {
 	font-size: 1.2em;
 }
 
-/* Usynlige kulepunkter */
-.nobullet{
-	list-style-type: none;
-}
+
 
 /* Hovedbilde med frosk */
 .splashpicture {
@@ -385,6 +382,10 @@ fra https://www.w3schools.com/css/css_table.asp */
 /*************************/
 /* 	   Instruksjoner     */
 /*************************/
+
+.top-margin {
+	margin-top: 40px;
+}
 
 .frog-icon {
 	height: 50px;
